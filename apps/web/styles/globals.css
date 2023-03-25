@@ -1,0 +1,19 @@
+:root {
+  --tokunou-grade-good-bg: #39c;
+  --tokunou-grade-soso-bg: #9CC;
+  --tokunou-grade-bad-bg: #F33;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/**
+ * @see https://stackoverflow.com/questions/74980740/html2canvas-shifting-text-downwards
+ */
+@layer base {
+  img {
+    @apply inline-block;
+  }
+}
+

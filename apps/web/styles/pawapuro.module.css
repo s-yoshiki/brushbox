@@ -1,0 +1,306 @@
+.profile {
+  width: 720px;
+}
+
+.fontFamily {
+  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+}
+
+.tokunou, .tokunou-rank {
+  font-family: "Rounded Mplus 1c", sans-serif;
+  font-weight: bold;
+  word-wrap: normal;
+}
+
+.position {
+  text-align: center;
+  border: 2px solid #d4e7f6;
+  border-radius: 5px;
+  display: inline-block;
+  min-width: 85px;
+}
+
+.position > input {
+  border: none;
+  outline: none;
+  min-width: 80px;
+  margin: 0;
+  padding: 3px;
+  width: 0;
+  font-size: 14px;
+}
+
+:not(.position:hover) > .positionSelect {
+  width: 0;
+  border: none;
+  outline: none;
+  background-color: #E2F4F7;
+}
+
+.infielder {
+  background: linear-gradient(#fce370, #fce370, #fce370, #fbd008, #fbd008 80%);
+  border-color: #bc7f28;
+}
+
+.outfielder {
+  background: linear-gradient(#a6faac, #a6faac, #67f272, #67f272, #67f272 90%);
+  border-color: #5ebc51;
+}
+
+.catcher {
+  background: linear-gradient(#87F3F9, #87F3F9, #27E6FB, #27E6FB, #27E6FB 90%);
+  border-color: #15578D;
+}
+
+.pitcher {
+  background: linear-gradient(#FFC1DE, #FFC1DE, #FD9CC3, #FD9CC3, #FD9CC3 90%);
+  border-color: #D33374;
+}
+
+
+.label {
+  color: #6e91c1;
+  padding: 0 5px;
+  text-align: center;
+  border: 2px solid #d4e7f6;
+  border-radius: 5px;
+  background: linear-gradient(#fff, #fff, #fff, #f1ebed, #f1ebed 90%);
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* .label:hover > .innerInput {
+  background: linear-gradient(#fff, #fff, #fff, #f1ebed, #f1ebed 90%);
+  border: none;
+  color: #00257F;
+  font-size: 12px;
+  min-width: 50px;
+  padding: 0px;
+  margin: 0px;
+  outline: none;
+  text-align: center;
+  width: 50px;
+}
+:not(.label:hover) > .innerInput{
+  display: none;
+}
+.label:hover > .innerLabel {
+  display: none;
+}
+:not(.label:hover) > .innerLabel {
+  display: inline-block;
+  background: linear-gradient(#fff, #fff, #fff, #f1ebed, #f1ebed 90%);
+  border: none;
+  color: #00257F;
+  font-size: 12px;
+  max-width: 50px;
+  min-width: 50px;
+  padding: 0px;
+  margin: 0px;
+  outline: none;
+  text-align: center;
+  width: 50px;
+} */
+
+.label > input {
+  background: linear-gradient(#fff, #fff, #fff, #f1ebed, #f1ebed 90%);
+  border: none;
+  color: #00257F;
+  font-size: 14px;
+  min-width: 50px;
+  outline: none;
+  text-align: center;
+  width: 50px;
+}
+
+.label > input:focus {
+  border: none;
+  outline: none;
+}
+
+.abilityrow {
+  background-color: #E2F4F7;
+  padding: 1px;
+  margin: 2px;
+  color: #00257F;
+  border: 3px solid #F8F9FB;
+  border-radius: 5px;
+}
+
+.abilityrow > input {
+  border: none;
+  outline: none;
+  color: #00257F;
+  background-color: #E2F4F7;
+  min-width: 60px;
+  width: 45%;
+  font-size: 12.5px;
+  font-weight: 900;
+  font-family: "Hiragino Sans", "ヒラギノ角ゴシック";
+  text-align: right;
+}
+
+.abilityrow > select {
+  border: none;
+  outline: none;
+  background-color: #E2F4F7;
+  font-weight: 900;
+  font-family: "Hiragino Sans", "ヒラギノ角ゴシック";
+  appearance: none;
+  width: 18px;
+  -webkit-text-stroke: 1px #FFF;
+}
+
+.abilityrowRank {
+  color: #00257F;
+  font-size: 16px;
+  font-weight: 900;
+  font-family: "Hiragino Sans", "ヒラギノ角ゴシック";
+  margin-right: 5px;
+  -webkit-text-stroke: 1px #FFF;
+}
+
+.abilityS { color: #ED5A97; }
+.abilityA { color: #E81CD8; }
+.abilityB { color: #E00427; }
+.abilityC { color: #CE7B29; }
+.abilityD { color: #BEB100; }
+.abilityE { color: #2EC102; }
+.abilityF { color: #058AF6; }
+.abilityG { color: #8A8B8B; }
+
+.rankContainer:hover > .abilityrowRank {
+  display: none;
+}
+
+:not(.rankContainer:hover) > .rankSelect {
+  display: none;
+}
+
+.angle {
+  display: inline-block;
+  width: 20px;
+  font-size: 20px;
+  transform-origin: center, center;
+  -webkit-text-stroke: 1px #FFF;
+}
+
+.angle4 {
+  transform: rotateZ(-70deg);
+  color: #ED5A97;
+}
+
+.angle3 {
+  transform: rotateZ(-45deg);
+  color: #E00427;
+}
+
+.angle2 {
+  color: #CE7B29;
+  transform: rotateZ(-25deg);
+}
+
+.angle1 {
+  transform: rotateZ(0deg);
+  color: #BEB100;
+}
+
+.angleContainer:hover > .angle {
+  display: none;
+}
+
+:not(.angleContainer:hover) > .angleSelect {
+  display: none;
+}
+
+.tokunou {
+  display: inline-block;
+  display: block;
+  text-align: center;
+  border-width: thin;
+  border-style: solid;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 13.5px;
+  font-weight: 500;
+  border-color: #B1E2FD;
+}
+
+.tokunou > input {
+  border: none;
+  outline: none;
+  margin: 1px;
+  padding: 3px;
+}
+
+.tokunouGrp {
+  width: 100%;
+}
+
+:not(.tokunouGrp:hover) > .tokunouSelect {
+  width: 100%;
+  border: none;
+  outline: none;
+  display: none;
+}
+
+.tokunou-rank {
+  display: flex;
+  justify-content: flex-end;
+  border-width: thin;
+  border-style: solid;
+  border-radius: 5px;
+  text-shadow: 1px 1px 0 rgba(100%, 100%, 100%, 0.75);
+}
+
+.tokunou-grade-label {
+  text-indent: 0.25em;
+  letter-spacing: 0.25em;
+  width: 100%;
+  text-align: center;
+  padding: 4px 8px;
+}
+
+.akatoku,
+.akatoku-rank {
+  color: #B22414;
+  background: linear-gradient(#fcc, #fff 50%, #fcc 50%, #f99 70%, #fcc);
+  border-color: #f33;
+}
+
+.aotoku,
+.aotoku-rank {
+  color: #106DAE;
+  background: linear-gradient(#73DAF5, #fff 50%, #B5F3F5 50%, #B5F3F5 70%, #73DAF5);
+  border-color: #3D9CB0;
+}
+
+.tokunasi {
+  color: #9ED3E9;
+  background: linear-gradient(#CCF4FD, #F0FAFE 50%, #CCF4FD 50%, #E2F6FF 70%, #CCF4FD);
+  border-color: #B1E2FD;
+}
+
+.tokunou-grade {
+  padding: 2px 4px 2px 4px;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+}
+
+.aotoku > .tokunou-grade {
+  background: #0CA9D3;
+}
+
+.tokunasi > .tokunou-grade {
+  background: #A6E8FB;
+}
+
+.akatoku > .tokunou-grade {
+  background: #ED7171;
+}
+
+.midoritoku {
+  color: #227D57;
+  background: linear-gradient(#6c6, #fff 50%, #9e9 50%, #6c6 70%, #cdc);
+  border-color: #393;
+}
